@@ -12,6 +12,7 @@ class FakeSecretNumber
     1
   end
 end
+
 describe Game do
 
   before do
@@ -65,7 +66,7 @@ describe Game do
     game.status.must_equal :low
 
     game.make_guess_of(1)
-    game.message.must_equal "You won! You guessed in 3 turns!"
+    game.message.must_equal "You won! You guessed in 3 turn(s)!"
     game.status.must_equal :won
   end
 

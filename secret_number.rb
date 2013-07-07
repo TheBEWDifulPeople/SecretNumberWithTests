@@ -38,7 +38,7 @@ begin
     puts "\nNice Game! Would you like to play again?"
     puts "(Q)uit or (C)ontinue?"
     # Make sure the Player's input can be accurately compared against
-    choice = gets.chomp.upcase
+    choice = $stdin.gets.chomp.upcase
     # If they choose "Q" quit the Game gracefully.
     if choice == "Q"
       puts "\nThanks for playing!"

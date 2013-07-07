@@ -17,7 +17,7 @@ class Game
   end
 
   def playable?
-    ![:win, :lost].include?(@status)
+    ![:won, :lost].include?(@status)
   end
 
 
@@ -47,12 +47,11 @@ class Game
       {
       high: "Your guess was too high!",
       low: "Your guess was too low!",
-      won: "You won! You guessed in #{current_guess_count} turns!",
+      won: "You won! You guessed in #{current_guess_count} turn(s)!",
       lost: "You lost!\nThe secret number was #{@secret_number.secret_number}!"
     }[@status]
   end
 
-  private 
   def current_guess_count
     guesses_allowed -  guesses_left
   end
