@@ -1,0 +1,13 @@
+Run all of the specs in this application by running
+`rake spec`
+
+This will guide you on what code to write next!
+
+To run secret number run
+ruby secret_number.rb 3 1 10
+
+3 is the number of guesses you get
+1 is the lowest number you can select from
+10 is the highest. 
+This translates to, start a game with 3 guesses
+where the user has to choose a number between 1 and 10
