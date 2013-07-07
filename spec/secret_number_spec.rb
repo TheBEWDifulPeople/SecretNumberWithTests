@@ -31,7 +31,6 @@ describe SecretNumber do
     result[2].wont_equal 0, "should be random number"
   end
 
-  it "raises error unless a range is given"
   it "returns a well formatted number for printing" do
     sn = SecretNumber.new(1..2)
     sn.to_s.must_equal "1 and 2"

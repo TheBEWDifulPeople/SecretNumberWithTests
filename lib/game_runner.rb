@@ -20,6 +20,8 @@ class GameRunner
 
   def self.show_creator
     # give yourself some credit!
-    puts "Created by Steven Nunez"
+    author = nil
+    raise "Attribute game to yourself" unless author
+    puts "Created by #{author}"
   end
 end
